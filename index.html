@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="scripts/css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/registerNow.png">
+    <script type="text/javascript" defer src="scripts/js/registration-form.js"></script>
+</head>
+<body>
+    <div class="wholeContentContainer">
+    <div class="heroContainer">
+        <div class="leftPartContainer">
+            <div class="leftContent">
+                <center><h1>REGISTRATION FORM</h1></center>
+            </div>
+            <div class="birdRegisterNow">
+                <img src="images/registerNow.png" alt="birdRegisterNow" >
+            </div>
+        </div>
+        <div class="rightPartContainer">
+            <form action="">
+                <table>
+                    <tr>
+                    <td>
+                <label for="title">TITLE</label><br>
+                <select name="title" id="title">
+                    <option></option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Engr.">Engr.</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Ar.">Ar.</option>
+                </select></td>
+                <td>
+                <label for="name">NAME:</label>
+                <input type="text" id="name" placeholder="Firstname Lastname">
+            </td>
+            
+        <td>
+                <label for="birthdate">BIRTHDATE:</label>
+                <input type="date" id="birthdate">
+        </td></tr>
+        <tr><td>
+                <label for="gender">GENDER</label>
+                <select name="gender" id="gender">
+                    <option></option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select></td>
+            <td>
+
+                <label for="age">AGE</label>
+                <input type="number" placeholder="Age" id="age">
+            </td></tr>
+        </table>
+        <br>
+    <div class="hobbies_Description">
+                <label for="hobbies">HOBBIES &nbsp;</label>
+                <div class="multiSelector">
+                    
+                    <div class="selectField">
+                        <input type="text" name="" placeholder="Choose options" id="" class="inputSelector">
+                    <span class="down-arrow">&blacktriangledown;</span>
+                    </div>
+            <br>
+                    <div class="lists hide">
+                        <div class="checkboxes">
+                            <label for="sports" class="hobby">
+                                <input type="checkbox" id="sports"><span>sports</span>
+                            </label>
+                            <label for="cooking" class="hobby">
+                                <input type="checkbox" id="cooking"><span>cooking</span>
+                            </label>
+                            <label for="reading" class="hobby">
+                                <input type="checkbox" id="reading"><span>reading</span>
+                            </label>
+                            <label for="watchingShows" class="hobby">
+                                <input type="checkbox" id="watchingShows"><span>watching shows</span>
+                            </label>
+                            <label for="gardening" class="hobby">
+                                <input type="checkbox" id="gardening"><span>gardening</span>
+                            </label>
+                            <label for="socialDrinking" class="hobby">
+                                <input type="checkbox" id="socialDrinking"><span>social drinking</span>
+                            </label>
+                            <label for="playingGames" class="hobby">
+                                <input type="checkbox" id="playingGames"><span>playing games</span>
+                            </label>
+                            <label for="others" class="hobby">
+                                <input type="text" id="others" placeholder="others: ">
+                            </label>
+                        </div>
+            
+                    </div>
+                </div>
+        
+            </div>
+
+                <div class="description">DESCRIPTION<br>
+                <label for="description">
+                    <textarea  rows="2" cols="68" id="description" placeholder="Please put a description of yourself.(2-3 sentences)"></textarea>
+                </label>
+            </div>
+       
+
+            
+<br><br><br>
+<div class="buttons">
+<button type="submit" id="registerButton" onclick="getInputs(); return false;" class="button">REGISTER</button>
+<button type="reset" id="clearButton"class="button">CLEAR FORM</button>
+           </div></div> </form>
+        </div>
+     </div>   
+        <div class="outputContainer">
+            <div class="output">
+                <p id="displayInfo"></p>
+                <form>
+                    <button id="closeButton" class="closeButton" onclick="clearForm()" >CLOSE</button>
+                </form>
+            </div>
+            
+        </div>
+
+   
+</body>
+</html>
